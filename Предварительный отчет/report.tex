@@ -212,7 +212,7 @@ p-n переход формируется на границе соприкосн
     \ln I_0=\overline{\ln I_k}-\frac{e}{kT}\overline{U_{\text{эб}}}
 \end{equation}
 
-Таким образом, для значений таблицы \hyperref[tab:1]{1} были получены значения $\ln I_0$ = 0.1 и $I_0$ = 1.1мА. Для таблицы \hyperref[tab:1]{1'}: $\ln I_0$=0.1, $I_0$=1.1мА.
+Таким образом, для значений таблицы \hyperref[tab:1]{1} были получены значения $\ln I_0$ = -11 и $I_0$ = 0.000017мА. Для таблицы \hyperref[tab:1]{1'}: $\ln I_0$=-11, $I_0$=0.000017мА.
 
 \begin{center}
 \begin{table}[H]
@@ -350,27 +350,40 @@ $\overline{a}=tg{\alpha}$ = 32.961.
 
 Окончательный ответ имеет вид: $\frac{e}{k} = 9761.4 \pm2124.29$ К/В.
 
-\subsubsection{Описание программ}
-Для проведения расчётов на языке $C++$ были написаны программы ",,,"\verb| |и ",,,"\verb|,| предназначенные для обработки данных.
-
-Программа ",,,"\verb| |состоит из ,,, функций: ,,,.
-
-Программа ",,"\verb| |,,,.
-
-
 \subsubsection{Графики}
 
-На рис.~\ref{fig:plot}, приведён результат работы программы gnuplot.
+На рис.~\ref{fig:plot1}, рис.~\ref{fig:plot2}, рис.~\ref{fig:plot3}, рис.~\ref{fig:plot4} приведены результаты работы программы gnuplot. Первые два графика представляют собой графики зависимости $\ln I_k = \ln I_0 + \frac{e}{kT}U_{\text{эб}}$ для значений таблиц \hyperref[tabl:2]{1} и \hyperref[tabl:2]{1'} соответственно. Последние два также соответствуют значениям таблиц \hyperref[tabl:2]{1} и \hyperref[tabl:2]{1'}, но уже демонстрируют экспоненциальную зависимость $I_k = I_0e^{\frac{eU_{\text{эб}}}{kT}}$.
 
 \begin{figure}
 \centering
-\includegraphics[width=0.8\textwidth]{Plot.png}
-\caption{График зависимости результатов наблюдений от времени}
-\label{fig:plot}
+\includegraphics[width=0.8\textwidth]{Plot1.png}
+\caption{График зависимости $\ln I_k = \ln I_0 + \frac{e}{kT}U_{\text{эб}}$ для таблицы \hyperref[tabl:1]{1}}
+\label{fig:plot1}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{Plot2.png}
+\caption{График зависимости $\ln I_k = \ln I_0 + \frac{e}{kT}U_{\text{эб}}$ для таблицы \hyperref[tabl:2]{1'}}
+\label{fig:plot2}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{Plot3.png}
+\caption{График зависимости $I_k = I_0e^{\frac{eU_{\text{эб}}}{kT}}$ для таблицы \hyperref[tabl:2]{1}}
+\label{fig:plot3}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{Plot4.png}
+\caption{График зависимости $I_k = I_0e^{\frac{eU_{\text{эб}}}{kT}}$ для таблицы \hyperref[tabl:2]{1'}}
+\label{fig:plot4}
 \end{figure}
 
 \section{Вывод}
-... 
+В ходе данной лабораторной работы были измерены напряжение между коллектором и базой биполярного транзистора с разной точностью и ток короткого замыкания коллектора, зависящие от напряжения между эмиттером и базой. Было определено отношение заряда электрона к постоянной Больцмана с погрешностью на основе полученных в ходе эксперимента, а также высчитанных далее значений. Построены графики зависимости $\ln I_k = \ln I_0 + \frac{e}{kT}U_{\text{эб}}$ и $I_k = I_0e^{\frac{eU_{\text{эб}}}{kT}}$ с нанесёнными на них точками полученных значений $\ln I_k$ от $U_{\text{эб}}$ и $I_k$ от $U_{\text{эб}}$ соответственно.
 
 \begin{thebibliography}{9}
 \bibitem{repo}
