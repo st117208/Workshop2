@@ -19,9 +19,13 @@ void in(float a[], float b[], double n)
 
 float roundx(float m, int n)
 {
+    if (m == 0)
+    {
+        return 0;
+    }
     int exp = static_cast<int>(std::floor(std::log10(std::abs(m))));
-    double val = std::pow(10, n - exp);
-    float tmp = round(m) / val;
+    float val = std::pow(10, n - exp);
+    float tmp = round(m * val) / val;
     return tmp;
 }
 
@@ -43,8 +47,9 @@ float lni(float a[], float b[], float tga, double n)
 
 void out(float a[], float b[], float tga, double n)
 {
+    float ln = roundx(lni(a, b, tga, n), 1);
     std::ofstream out("Output.csv");
-    out << std::setprecision(2) << lni(a, b, tga, n) << " " << std::setprecision(2) << exp(lni(a, b, tga, n));
+    out << std::setprecision(2) << ln << " " << std::setprecision(2) << exp(ln);
 
 }
 int main()

@@ -1,10 +1,10 @@
 ﻿  Source.cpp
-C:\Users\Katerina\Workshop2\Table2(')\Table2(')\Source.cpp(27,15): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\Katerina\Workshop2\Table2(')\Table2(')\Source.cpp(49,28): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
-C:\Users\Katerina\Workshop2\Table2(')\Table2(')\Source.cpp(64,13): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\Katerina\Workshop2\Table2(')\Table2(')\Source.cpp(65,18): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\Katerina\Workshop2\Table2(')\Table2(')\Source.cpp(73,13): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\Katerina\Workshop2\Table2(')\Table2(')\Source.cpp(80,13): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\Katerina\Workshop2\Table2(')\Table2(')\Source.cpp(82,15): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\Katerina\Workshop2\Table2(')\Table2(')\Source.cpp(97,32): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Katerina\Workshop2\Table2(')\Table2(')\Source.cpp(31,15): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\Katerina\Workshop2\Table2(')\Table2(')\Source.cpp(53,28): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Katerina\Workshop2\Table2(')\Table2(')\Source.cpp(68,13): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\Katerina\Workshop2\Table2(')\Table2(')\Source.cpp(69,18): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\Katerina\Workshop2\Table2(')\Table2(')\Source.cpp(77,13): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\Katerina\Workshop2\Table2(')\Table2(')\Source.cpp(84,13): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\Katerina\Workshop2\Table2(')\Table2(')\Source.cpp(86,15): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\Katerina\Workshop2\Table2(')\Table2(')\Source.cpp(101,32): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
   Table2(').vcxproj -> C:\Users\Katerina\Workshop2\Table2(')\x64\Debug\Table2(').exe

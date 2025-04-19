@@ -50,7 +50,7 @@ float fx(float c[], double n)
         sum = sum + c[i];
     }
 
-    float tmp = roundx(sum / n, 2);
+    float tmp = roundx(sum / n, 1);
     return tmp;
 }
 
@@ -59,7 +59,7 @@ void tgi(float a[], float b[], float c[], double n)
     in_round(a, b, n);
     for (int i = 0; i < n; i++)
     {
-        c[i] = roundx(b[i] / a[i], 2);
+        c[i] = roundx(b[i] / a[i], 1);
     }
 }
 
@@ -98,17 +98,18 @@ void out(float a[], float b[], float c[], double n)
     for (int i = 0; i < n; i++)
     {
         float tmp1 = roundx(c[i] - fx(c, n), 1);
-        float tmp2 = roundx(pow(tmp1, 2), 3);
+        float tmp2 = roundx(pow(tmp1, 2), 1);
 
         sum1 = sum1 + c[i];
         sum2 = sum2 + tmp2;
-        out << a[i] << " " << b[i] << " " << c[i] << " " << tmp1 << " " << tmp2 << std::endl;
+        out << std::setprecision(2) << a[i] << "  " << std::setprecision(2) << b[i] << "  " << std::setprecision(2) << c[i] << "  " << std::setprecision(2) << tmp1 << "  " << std::setprecision(2) << tmp2 << std::endl;
     }
-    out << "sum = " << sum1 << " sum(^2) = " << sum2 << std::endl;
-    out << fx(c, n) << std::endl;
-    out << tg_err(c, n, sum2) << std::endl;
-    out << ek(fx(c, n)) << std::endl;
-    out  << ek_err(fx(c, n), tg_err(c, n, sum2)) << std::endl;
+
+    out << "sum = " << std::setprecision(2) << sum1 << " sum(^2) = " << std::setprecision(2) << sum2 << std::endl;
+    out << std::setprecision(2) << fx(c, n) << std::endl;
+    out << std::setprecision(2) << tg_err(c, n, sum2) << std::endl;
+    out << std::setprecision(2) << ek(fx(c, n)) << std::endl;
+    out << std::setprecision(2) << ek_err(fx(c, n), tg_err(c, n, sum2)) << std::endl;
 }
 
 int main()
